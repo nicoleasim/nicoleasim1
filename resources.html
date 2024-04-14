@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>MAD B</title>
+	<link rel="stylesheet" href="mystyle.css">
+	<link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+	<section class="sub-header">
+		<nav>
+		<div class="nav-logo"><a>Pixelated<br/>
+		Perspectives</a></div>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-times"onclick="hideMenu()"></i>	
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="resources.html">RESOURCES</a></li>
+						<li><a href="">CONTACT US</a></li>
+				</ul>
+				</div>
+			<i class="fa fa-bars"onclick="showMenu()"></i>	
+		</nav>
+		
+	<h1>Resources</h1>
+	</section>
+
+
+<!--- Resources ---->
+
+	<section class="offer" id="offer">
+		<h1>What We Offer
+		</h1>
+		<div class="row">
+			<div class="course-col">
+			<h3>Workshops</h3>
+			<p>Children today are born into a world where technology is at their fingertips, which can expand the digital gap between generations. We know that a lack of confidence can prevent people from wanting to use technology, and we can help with this by assisting all staff, teachers, youth workers (anyone really!), with their technological skills when it comes to learning. We can support you through your digital learning journey.
+			</p>
+		</div>
+		<div class="course-col">
+			<h3>Online Games</h3>
+			<p> Accessible anytime, anywhere, our online resources serve as a treasure trove of inspiration and knowledge for educators and students alike. From lesson plans and curriculum guides to educational games and activities, we provide a wealth of resources to enrich the learning experience both inside and outside the classroom.
+			</p>
+		</div>
+		<div class="course-col">
+			<h3>Professional Development</h3>
+			<p>We understand that integrating technology into the classroom can be daunting. That's why we offer workshops and training sessions designed to support educators in harnessing the power of gaming for educational purposes. From game-based learning strategies to practical implementation tips, we empower teachers to confidently embrace technology in their teaching practice.
+			</p>
+		</div>
+	</section>
+
+</section>
+
+
+<!---Footer--->
+
+<section class="footer">
+	<h4>Here to support children’s learning in the humanities using digital technologies.</h4>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-linkedin"></i>
+	<i class="fa fa-instagram"></i>
+	</div>
+	<p>Submitted for MAD B
+	</p>
+</section>
+
+
+<!-----JavaScript for Toggle Menu---->
+<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+			}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+			}
+			
+		// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
